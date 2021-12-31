@@ -5,38 +5,46 @@
     <title>Study Registration</title>
 </head>
 <body>
-<h2><span style="color:blue;background-color:cyan">ĐĂNG KÝ HỌC VIÊN</span> </h2>
+<style>
+    .title{
+        color: blue;
+        background-color: cyan;
+        width:100;
+        padding: 0px 45px;
+    }
+    .form{
+        background-color: yellow;
+        width: 30%;
+    }
+</style>
+
+<form class="form">
+<h2 class="title">ĐĂNG KÝ HỌC VIÊN</h2>
 <TABLE>
     <tr><td><span style="color:blue">Họ và tên</span></td>
         <td><input type="text" name="name"></td></tr>
     <tr><td><span style="color:blue">Ngày sinh</span></td>
         <td><input type="text" name="dob"></td></tr>
     <tr><td><span style="color:blue">Giới tính</span></td>
-        <td><input type="radio" name="gender">Nam</td>
-        <td><input type="radio" name="gender">Nữ</td></tr>
+        <td><input type="radio" name="gender">Nam
+            <input type="radio" name="gender">Nữ</td></tr>
     <tr><td><span style="color:blue">Địa chỉ</span></td>
         <td><input type="text" name="address"></td></tr>
-    <tr><form><td>
-        <label for="lớp"><span style="color:blue">Lớp</span></label>
-        <select name="class" id="lớp">
+    <tr><td><form>
+        <label for="lớp"><span style="color:blue">Lớp</span></label></td>
+        <td><select name="class" id="lớp" >
             <option value="not selected">-Chọn lớp-</option>
             <option value="9A">9A</option>
             <option value="9B">9B</option>
-        </select>
+        </select></td>
         </form></td></tr>
     <tr><td><span style="color:blue">Email</span></td>
         <td><input type="text" name="email"></td></tr>
     <tr><td><span style="color:blue">Điện thoại</span></td>
         <td><input type="text" name="phone"></td></tr>
-</TABLE>
-<input type="button" name="register" value="Đăng ký">
-<input type="reset" name="reset" value="Nhập lại">
-
-
-
-
-
-
-
+</table>
+<input type="button" name="register" value="Đăng ký" class="register">
+<input type="reset" name="reset" value="Nhập lại"class="register">
+</form>
 </body>
 </html>
